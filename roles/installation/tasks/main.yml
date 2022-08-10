@@ -1,0 +1,12 @@
+---
+# Master redirect rol for installation of the agent
+- name: Configure agent on Linux
+  include_tasks: Redhat_install.yml
+  when:
+    - ansible_distribution_release == "rhel"
+
+- name: Configure agent on Windows
+  include_tasks: Windows_install.yml
+  when:
+    - ansible_distribution_release == "Windows"
+...
