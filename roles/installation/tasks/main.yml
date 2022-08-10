@@ -3,7 +3,7 @@
 - name: Configure agent on Linux
   include_tasks: Redhat_install.yml
   when:
-    - ansible_distribution_release == "rhel"
+    - ansible_distribution == 'Red Hat Enterprise Linux'
 
 - name: Configure agent on Windows
   include_tasks: Windows_install.yml
