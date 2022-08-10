@@ -1,9 +1,34 @@
 ---
 - name: Requirements - Installation of required packages
-- name: Requirements - 
+  ansible.builtin.yum:
+    name:
+      - m4
+      -
+      -
+    state: present
+
+- name: Requirement - check if agent is installed
+- name: Requirement - check if agentfiles are on server
+- name: Requirement - copy agentfiles
+
+- name: Requirements - place profile root
+  ansible.builtin.template:
+    src: profile-root.j2
+    dest: /tmp/oa-profile
+  tags: 
+    -root
+
+- name: Requirements - place profile non-root
+  ansible.builtin.template:
+    src: profile-nonroot.j2
+    dest: /tmp/oa-profile
+  tags: 
+    - nonroot
+
+- name: Agent - Precheck Only
+  # oainstall -i -a -precheckonly
 - name: Agent - Installation of the agent
 - name: Agent - Verify if agent is installed
-- name: Agent Configuration - Connect agent to OBM manager
 - name: Agent Configuration - verify if connectionjob is completed
 - name: Agent verify - verify if agent can connect to OBM
 - name: Agent verify - verify if agent has certificates
