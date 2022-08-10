@@ -1,0 +1,11 @@
+---
+- name: Requirements - Installation of required packages
+- name: Requirements - 
+- name: Agent - Installation of the agent
+- name: Agent - Verify if agent is installed
+- name: Agent Configuration - Connect agent to OBM manager
+- name: Agent Configuration - verify if connectionjob is completed
+- name: Agent verify - verify if agent can connect to OBM
+- name: Agent verify - verify if agent has certificates
+- name: Agent verify - verify if agent has policys
+...

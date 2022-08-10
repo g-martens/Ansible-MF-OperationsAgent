@@ -1,0 +1,5 @@
+---
+# vars file for installation
+mgr_server: #OBM cluster
+cert_server: #OBM cluster
+...
