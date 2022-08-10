@@ -1,4 +1,4 @@
-Microfocus Operations Agenet
+Microfocus Operations Agent
 =========
 
 Requirements
