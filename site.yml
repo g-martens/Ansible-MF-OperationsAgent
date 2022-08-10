@@ -1,0 +1,20 @@
+---
+- name: installatie
+  host: all
+  roles:
+    - installation
+  tags:
+    - install
+    
+  host: all
+  roles:
+    - upgrade
+  tags:
+    - upgrade
+    
+  host: all
+  roles:
+    - remove
+  tags:
+    - remove
+...
