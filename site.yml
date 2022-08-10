@@ -1,17 +1,19 @@
 ---
-- name: installatie
+- name: Install OA
   host: all
   roles:
     - installation
   tags:
     - install
     
+- name: Upgrade OA
   host: all
   roles:
     - upgrade
   tags:
     - upgrade
     
+- name: Remove OA 
   host: all
   roles:
     - remove
