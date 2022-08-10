@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: Guido Martens
+  description: Monitoring Specialist
+  company: Guido Martens
+  license: By Guido Martens
+
+  min_ansible_version: 2.1
+
+  platforms:
+    - name: Redhat
+
+  galaxy_tags: []
+
+dependencies: []
+...
