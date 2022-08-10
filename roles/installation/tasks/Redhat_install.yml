@@ -28,7 +28,10 @@
 - name: Agent - Precheck Only
   # oainstall -i -a -precheckonly
 - name: Agent - Installation of the agent
+  # oainstall -i -a -agent_profile /tmp/oa-profile
 - name: Agent - Verify if agent is installed
+- name: Agent Configuration - connect with OBM
+  # opcactivate -srv <obmserver> -cert_srv <obmserver> -f
 - name: Agent Configuration - verify if connectionjob is completed
 - name: Agent verify - verify if agent can connect to OBM
 - name: Agent verify - verify if agent has certificates
